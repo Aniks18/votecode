@@ -1,0 +1,55 @@
+.auth-container {
+    max-width: 500px;
+    margin: 40px auto;
+  }
+  
+  .auth-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .auth-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .auth-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--gray-dark);
+  }
+  
+  .auth-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .auth-link:hover {
+    text-decoration: underline;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .radio-label input {
+    margin-right: 8px;
+    width: auto;
+  }
+  
+  .file-input {
+    padding: 8px 0;
+  }

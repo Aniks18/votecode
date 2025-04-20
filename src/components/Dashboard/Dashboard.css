@@ -1,0 +1,185 @@
+/* Dashboard Container */
+.dashboard-container {
+    width: 100%;
+  }
+  
+  .dashboard-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+  }
+  
+  .dashboard-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .dashboard-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .dashboard-section {
+    margin-bottom: 20px;
+  }
+  
+  /* Profile Section Styles */
+  .profile-card, .role-card, .candidates-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .profile-header, .role-header, .candidates-header {
+    background-color: var(--primary-color);
+    padding: 15px;
+  }
+  
+  .profile-title, .role-title, .candidates-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .profile-content, .role-content, .candidates-content {
+    padding: 20px;
+  }
+  
+  .profile-photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .profile-detail-item {
+    margin-bottom: 12px;
+  }
+  
+  .profile-detail-label, .role-detail-label {
+    font-size: 14px;
+    color: var(--gray-dark);
+    margin-bottom: 4px;
+  }
+  
+  .profile-detail-value {
+    font-weight: 500;
+    color: var(--dark-color);
+  }
+  
+  /* Role Section Styles */
+  .role-status {
+    margin-bottom: 20px;
+  }
+  
+  .voter-info, .host-info {
+    margin-top: 20px;
+  }
+  
+  .role-description {
+    color: var(--gray-dark);
+    margin-bottom: 16px;
+  }
+  
+  .voter-guidelines {
+    margin-top: 20px;
+  }
+  
+  .guidelines-title {
+    font-weight: 500;
+    color: var(--dark-color);
+    margin-bottom: 8px;
+  }
+  
+  .guidelines-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--gray-dark);
+  }
+  
+  .guidelines-list li {
+    margin-bottom: 4px;
+  }
+  
+  .candidate-form {
+    margin-top: 16px;
+  }
+  
+  /* Candidates Section Styles */
+  .candidates-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .candidate-item {
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    padding: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .candidate-item:hover {
+    border-color: var(--primary-color);
+  }
+  
+  .candidate-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .candidate-name {
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 8px;
+  }
+  
+  .candidate-description {
+    font-size: 14px;
+    color: var(--gray-dark);
+  }
+  
+  .vote-count {
+    text-align: center;
+  }
+  
+  .vote-action {
+    margin-top: 16px;
+  }
+  
+  .no-candidates {
+    text-align: center;
+    color: var(--gray-dark);
+    padding: 20px 0;
+  }
+  
+  .voted-message {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: var(--gray-light);
+    border-radius: 8px;
+    text-align: center;
+    color: var(--gray-dark);
+    font-size: 14px;
+  }
